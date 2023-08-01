@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">-->
+	<!--<script src="https://kit.fontawesome.com/a81368914c.js"></script>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+</head>
+<body>
+  
+	<img class="wave" src="img/wave.jpeg">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+			
+		</div>
+		
+		<div class="login-content">
+			<form action="loginservlet" method="POST">
+				<img src="img/avatar.svg">
+				<h1 class="title">LOGIN </h1>
+           		
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		
+                               <i class="fa fa-envelope"></i>
+           		   </div>
+           		   <div class="div">
+           		   	 <input type="email" id="email" placeholder=" Email" name="email" required oninput="validateEmail()">
+                                 <span id="emailError" style="color: red;"></span>
+           		   </div>
+           		
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<!-- <h5>Password</h5> -->
+           		    	<input type="password"  placeholder="Enter Password " name="password" id="pass" required oninput="validatePassword()" > 
+                             <span id="passError" style="color: red;"></span>
+            	   </div>
+                            </div>
+           		<a href="owner.html">Don't have a account !?</a>
+            	<input type="submit" class="btn" value="Register">
+                   <div>
+                          <a href="loginkiny.html">Kinyarwanda</a>      
+                            </div>
+       
+                        </form>  
+       </div>
+        </div>
+    <!--<script type="text/javascript" src="js/main.js"></script>-->
+      <script type="text/javascript" src="validation.js"></script>
+</body>
+</html>
